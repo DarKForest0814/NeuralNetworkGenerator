@@ -4,7 +4,6 @@
 
 float sigmoid(float x)
 {
-    // I gues this is to determin the dimension of the graph
     int alpha = 2;
     return 1 / ( 1+exp(-x*alpha));
 };
@@ -110,7 +109,6 @@ class NeuralNetwork
        NeuralNetwork(int layersInf[],int num_inputs,int num_outputs,int num_layers);
        void inf();
        float* feedforward(float *input);
-       //void backpropergation(){}
 };
 
 inline NeuralNetwork::NeuralNetwork(int layersInf[],int num_inputs,int num_outputs,int num_layers)
